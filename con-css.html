@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrando CSS a HTML</title>
+    <style>
+        /* Reglas CSS */
+        /* Tipo etiqueta */
+        body {
+            background-color: lightblue;
+        }
+        /* Tipo clase */
+        .letra {
+            color: green;
+        }
+        /* Tipo ID */
+        #principal {
+            font-size: 2em;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="color:red;text-decoration: underline;">CSS en modo Inline</h1>
+    <article id="principal">
+        <header style="border-bottom: 1px solid lightgray;">
+            <h2 class="letra">Titulo del articulo 1</h2>
+        </header>
+        <section>
+            <p>Contenido del articulo</p>
+        </section>
+        <footer style="color: blue;">
+            Pie del articulo
+        </footer>
+    </article>
+    <article>
+        <header style="border-bottom: 1px solid lightgray;">
+            <h2 class="letra">Titulo del articulo 2</h2>
+        </header>
+        <section>
+            <p>Contenido del articulo</p>
+        </section>
+        <footer>
+            Pie del articulo
+        </footer>
+    </article>
+</body>
+</html>
