@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <!-- CSS Document -->
+    <style>
+        .cajon {
+            /* width: 310px; */
+            /* margin: auto; */
+            /* padding: 0; */
+            /* border: 0; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .caja {
+            width: 86px;
+            height: 86px;
+            /* display: inline-block; */
+            text-align: center;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 0;
+        }
+        .uno {
+            background-color: red;
+        }
+        .dos {
+            background-color: yellow;
+        }
+        .tres {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="cajon">
+        <div class="caja uno">
+            rojo
+        </div>
+        <div class="caja dos">
+            amarillo
+        </div>
+        <div class="caja tres">
+            verde
+        </div>
+    </div>
+</body>
+</html>
