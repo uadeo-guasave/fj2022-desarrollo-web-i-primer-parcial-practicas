@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <style>
+        #formulario {
+            width: 500px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: lightgray;
+            /* border: 1px solid gray; */
+            padding: 20px;
+            box-shadow: 0 0 10px gray;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        body {
+            background-color: #eee;
+        }
+        .form-group label, .form-group input, .form-group textarea {
+            display: block;
+            width: 100%;
+        }
+        .form-group {
+            flex: 1;
+        }
+        .form-row {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .form-row .form-group:first-child {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="formulario">
+        <form action="#">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" name="asunto" id="asunto" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                </div>
+            </div>
+            <input type="button" value="Enviar por correo" id="btnCorreo">
+            <button id="btnWhatsapp">Enviar por whatsapp</button>
+        </form>
+    </div>
+</body>
+</html>
