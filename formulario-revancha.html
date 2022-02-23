@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Revancha</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: #eee;
+        }
+
+        .container {
+            /* background-color: greenyellow; */
+        }
+
+        .box-shadow {
+            background-color: #fff;
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px gray;
+            border-radius: 10px;
+        }
+
+        .form {
+            /* background-color: red; */
+            margin: 20px;
+        }
+
+        .form-row {
+            /* background-color: aqua; */
+            display: flex;
+            margin-bottom: 20px;
+            column-gap: 20px;
+        }
+
+        .form-group {
+            /* background-color: purple; */
+            flex: 1;
+        }
+
+        .form-group label,
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+        }
+        .form button {
+            width: 100%;
+        }
+        .form label {
+            font-family: sans-serif;
+            font-size: .6em;
+            font-variant: small-caps;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-shadow">
+            <form action="#" class="form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="txtNombre">Nombre</label>
+                        <input type="text" name="txtNombre" id="txtNombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtCorreo">Correo electrónico</label>
+                        <input type="email" name="txtCorreo" id="txtCorreo" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="txtAsunto">Asunto</label>
+                        <input type="text" name="txtAsunto" id="txtAsunto" required>
+                    </div>
+                </div>
+                <!-- .form-row>.form-group>label+textarea -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="txtMensaje">Mensaje</label>
+                        <textarea name="txtMensaje" id="txtMensaje" cols="30" rows="10" required></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <button id="btnCorreo">Enviar por correo electrónico</button>
+                    <button id="btnWhatsapp">Enviar vía WhatsApp</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
