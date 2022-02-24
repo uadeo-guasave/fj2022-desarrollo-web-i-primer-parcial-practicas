@@ -20,22 +20,24 @@
 
         .container {
             /* background-color: greenyellow; */
+            margin: 20px 0;
         }
 
         .box-shadow {
             background-color: #fff;
-            width: 600px;
+            width: 400px;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            /* margin-top: 20px;
+            margin-bottom: 20px; */
             box-shadow: 0 0 10px gray;
             border-radius: 10px;
+            padding: 20px 0;
         }
 
         .form {
             /* background-color: red; */
-            margin: 20px;
+            margin: 0 20px;
         }
 
         .form-row {
@@ -43,6 +45,10 @@
             display: flex;
             margin-bottom: 20px;
             column-gap: 20px;
+        }
+
+        .form .form-row:last-child {
+            margin-bottom: 0;
         }
 
         .form-group {
@@ -64,6 +70,53 @@
             font-variant: small-caps;
             color: #666;
         }
+        .form-group input[type=text],
+        .form-group input[type=email],
+        .form-group textarea {
+            font-family: sans-serif;
+            font-size: 1em;
+            color: #666;
+            padding: 5px;
+            border-radius: 3px;
+            box-shadow: 0 0 5px lightgray;
+            border: 1px solid lightgray;
+        }
+        .form-group input[type=text]:focus,
+        .form-group input[type=email]:focus,
+        .form-group textarea:focus {
+            border-color: orange;
+            outline: 0;
+        }
+        
+        .btn {
+            font-family: sans-serif;
+            font-size: 0.8em;
+            font-weight: bold;
+            border-width: 1px;
+            border-style: solid;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 3px;
+            color: #ddd;
+            box-shadow: 0 0 5px lightgray;
+        }
+
+        #btnCorreo {
+            background-color: steelblue;
+        }
+
+        #btnWhatsapp {
+            background-color: #42c653;
+        }
+
+        #btnCorreo:hover {
+            background-color: navy;
+        }
+
+        #btnWhatsapp:hover {
+            background-color: darkgreen;
+        }
+
     </style>
 </head>
 
@@ -95,12 +148,13 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <button id="btnCorreo">Enviar por correo electrónico</button>
-                    <button id="btnWhatsapp">Enviar vía WhatsApp</button>
+                    <button class="btn" id="btnCorreo">Correo electrónico</button>
+                    <button class="btn" id="btnWhatsapp">WhatsApp</button>
                 </div>
             </form>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
